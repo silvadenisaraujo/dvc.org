@@ -171,6 +171,13 @@ const plugins = [
     }
   },
   {
+    resolve: 'gatsby-source-sanity',
+    options: {
+      projectId: 'zo8uk64s',
+      dataset: 'production'
+    }
+  },
+  {
     resolve: 'gatsby-plugin-manifest',
     options: {
       /* eslint-disable @typescript-eslint/naming-convention */

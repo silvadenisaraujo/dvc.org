@@ -29,9 +29,9 @@ module.exports = (
   const parentNode = getNode(markdownNode.parent)
   let isPath =
     typeof pathname === 'string'
-      ? parentNode.relativeDirectory.startsWith(pathname)
+      ? parentNode.relativeDirectory?.startsWith(pathname)
       : Array.isArray(pathname)
-      ? pathname.some(p => parentNode.relativeDirectory.startsWith(p))
+      ? pathname.some(p => parentNode.relativeDirectory?.startsWith(p))
       : false
   if (!isPath) return markdownAST
   visit(

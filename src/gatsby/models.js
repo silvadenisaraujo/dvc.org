@@ -5,6 +5,7 @@ const imageSourcePaths = require('./models/image-source-paths')
 const glossary = require('./models/glossary')
 const github = require('./models/github')
 const pruneCache = require('./models/prune-cache')
+const sanityblog = require('./models/sanityblog')
 
 const models = [
   markdownContent,
@@ -13,7 +14,8 @@ const models = [
   imageSourcePaths,
   glossary,
   github,
-  pruneCache
+  pruneCache,
+  sanityblog
 ]
 
 module.exports = models
