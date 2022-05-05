@@ -58,6 +58,7 @@
     "fs-extra": "^10.0.0",
     "gatsby": "^4.3.0",
     "gatsby-plugin-algolia": "^0.25.0",
+    "gatsby-plugin-gatsby-cloud": "^4.13.0",
     "gatsby-plugin-image": "^2.3.0",
     "gatsby-plugin-parent-resolvers": "^1.0.1",
     "gatsby-source-sanity": "^7.4.2",
