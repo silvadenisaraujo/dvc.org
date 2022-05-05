@@ -30,7 +30,7 @@ module.exports = ({ remark }) => {
               includeDefaultCss: true
             }
           },
-          'gatsby-remark-relative-images',
+          '@yathomasi/gatsby-remark-relative-images',
           'gatsby-remark-copy-linked-files',
           'gatsby-remark-external-links',
           {
