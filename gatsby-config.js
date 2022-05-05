@@ -173,7 +173,7 @@ const plugins = [
   {
     resolve: 'gatsby-source-sanity',
     options: {
-      projectId: 'zo8uk64s',
+      projectId: process.env.SANITY_PROJECT_ID,
       dataset: 'production'
     }
   },
