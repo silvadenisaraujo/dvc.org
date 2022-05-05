@@ -14,6 +14,7 @@ function onCreateNode(
     return
   }
   const parentNode = getNode(node.parent)
+  if (!parentNode.relativeDirectory) return
   const splitDir = parentNode.relativeDirectory.split(path.sep)
   if (splitDir[0] !== 'docs') return
 
