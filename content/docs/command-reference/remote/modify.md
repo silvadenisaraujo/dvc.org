@@ -587,12 +587,12 @@ for a full guide on using Google Drive as DVC remote storage.
 
 - `gdrive_user_credentials_file` - global path where DVC stores OAuth
   credentials to access Google Drive, by default
-  `$CACHE_HOME/pydrive2fs/{gdrive_client_id}/default.json` (see also
-  `profile` below), where the`CACHE_HOME` location per platform is:
+  `$CACHE_HOME/pydrive2fs/{gdrive_client_id}/default.json` (see also `profile`
+  below), where the`CACHE_HOME` location per platform is:
 
-  | macOS              | Linux  (\*typical) | Windows                 |
-  | ------------------ | ------------------ | ----------------------- |
-  | `~/Library/Caches` | `~/.cache`         | `%CSIDL_LOCAL_APPDATA%` |
+  | macOS              | Linux (\*typical) | Windows                 |
+  | ------------------ | ----------------- | ----------------------- |
+  | `~/Library/Caches` | `~/.cache`        | `%CSIDL_LOCAL_APPDATA%` |
 
   ```dvc
   $ dvc remote modify myremote \
@@ -603,9 +603,9 @@ See [Authorization](/doc/user-guide/setup-google-drive-remote#authorization) for
 more details.
 
 - `profile` - name for the GDrive credentials cache directory (part of the
-  global `gdrive_user_credentials_file` path). By default, credentials are cached
-  per `gdrive_client_id `, but you can set a custom profile name instead, for
-  example to avoid using the wrong user's credentials accidentally.
+  global `gdrive_user_credentials_file` path). By default, credentials are
+  cached per `gdrive_client_id `, but you can set a custom profile name instead,
+  for example to avoid using the wrong user's credentials accidentally.
 
   ```cli
   $ dvc remote modify --local myremote profile myprofile
@@ -626,8 +626,8 @@ more details.
 
 - `gdrive_acknowledge_abuse` - acknowledge the risk of downloading potentially
   [abusive](https://support.google.com/docs/answer/148505) data. Files
-  identified as such (malware, personal info., etc.) can only be downloaded
-  by their owner (with this param enabled).
+  identified as such (malware, personal info., etc.) can only be downloaded by
+  their owner (with this param enabled).
 
   ```dvc
   $ dvc remote modify myremote gdrive_acknowledge_abuse true
